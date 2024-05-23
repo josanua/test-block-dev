@@ -1,14 +1,11 @@
-let registerBlockType = wp.blocks.registerBlockType;
-let createElement = wp.element.createElement;
+// let registerBlockType = wp.blocks.registerBlockType;
+import {registerBlockType} from "@wordpress/blocks"
 
 registerBlockType("blocks-course/firstblock", {
     edit: function () {
-        return createElement("p", {
-            className: "blocks-course-edit"
-        }, "Edit");
+        return <p className:"blocks-course-edit">Edit</p>;
     },
     save: function () {
-        return createElement("p", null, "Save");
+        return <p className:"blocks-course-edit">Save</p>;
     },
 })
-
