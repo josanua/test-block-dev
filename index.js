@@ -3,9 +3,9 @@ import {registerBlockType} from "@wordpress/blocks"
 
 registerBlockType("blocks-course/firstblock", {
     edit: function () {
-        return <p className:"blocks-course-edit">Edit</p>;
+        return <p className:"blocks-edit">Edit</p>;
     },
     save: function () {
-        return <p className:"blocks-course-edit">Save</p>;
+        return <p className:"blocks-save">Save</p>;
     },
 })
